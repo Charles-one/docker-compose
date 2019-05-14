@@ -19,7 +19,7 @@
 
 ```
 
-git clone https://github.com/Charles-one/docker-compose.git ~/docker-compose
+git clone https://github.com/Charles-one/docker-compose-repositories.git ~/docker-compose
 
 ```
 
