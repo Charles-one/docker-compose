@@ -46,6 +46,6 @@ docker-compose up -d
 
 设置用户密码即可使用
 
-5. [更多docker-compose用法请参考这里]().
+5. 更多docker-compose用法[请参考这里]().
 
 
