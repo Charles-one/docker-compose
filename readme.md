@@ -4,16 +4,16 @@
 
 ## 目录
 
-### <a href="#first">1.运行条件</a>
-### <a href="#two">2.使用示例</a>
-### <a href="#three">3.docker-compose库存</a>
+### <a href="#first">1. 运行条件</a>
+### <a href="#two">2. 使用示例</a>
+### <a href="#three">3. docker-compose库存</a>
 
-### <a id="first">1.运行条件:</a>
+### <a id="first">1. 运行条件:</a>
 
 #### 需要docker和docker-compose. 如没安装, 可使用[脚本安装]()
 
 
-### <a id="two" href="">2.使用示例, 这里以wordpress-nginx-mariadb为例</a>
+### <a id="two">2. 使用示例, 这里以wordpress-nginx-mariadb为例</a>
 
 1. 使用git克隆docker-compose库, 并存放在当前用户目录中(即cd ~/ 所在地方)
 
@@ -55,7 +55,7 @@ docker-compose up -d
 5. [更多docker-compose用法请参考这里]().
 
 
-### <a id="three" href="">3.docker-compose库存</a>
+### <a id="three" >3. docker-compose库存</a>
 
 <a href="wordpress-nginx-mariadb/">wordpress-nginx-mariadb个人博客</a>
 
