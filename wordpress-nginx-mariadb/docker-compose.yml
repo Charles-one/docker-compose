@@ -1,0 +1,40 @@
+version: "3"
+services:
+  mariadb:
+    image: mariadb:10.2
+    container_name: mariadb_v1
+    environment:
+      MYSQL_ROOT_PASSWORD: "password_QUI356_ccf"
+      MYSQL_DATABASE: "wordpress"
+      MYSQL_USER: "wordone"
+      MYSQL_PASSWORD: "wordpress_weiki_JKL_sdf1"
+    volumes:
+      - ./lib/mariadb:/var/lib/mysql
+      - ./var/log/mysql:/var/log/mysql
+    ports:
+      - "3306:3306"
+  nginx:
+    image: nginx:1.14.2
+    container_name: nginx_v1
+    volumes:
+      - ./etc/nginx/conf:/etc/nginx
+      - ./var/log/nginx:/var/log/nginx
+      - ./wordpress:/usr/share/nginx/html
+    ports:
+      - 80:80
+    links:
+      - wordpress
+  wordpress:
+    depends_on:
+      - mariadb
+    links:
+      - mariadb
+    image: wordpress:php7.1-fpm
+    container_name: wordpress_v1
+    volumes:
+      - ./wordpress:/var/www/html
+    environment:
+      WORDPRESS_DB_HOST: mariadb
+      WORDPRESS_DB_USER: wordone
+      WORDPRESS_DB_PASSWORD: wordpress_weiki_JKL_sdf1
+      WORDPRESS_DB_NAME: wordpress

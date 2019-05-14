@@ -1,0 +1,41 @@
+version: '3'
+
+services:
+    mariadb:
+        image: mariadb:10.2
+        container_name: mariadb_nextcloud_v1
+        environment:
+            MYSQL_ROOT_PASSWORD: "password_QUI356_ccf"
+            MYSQL_DATABASE: "nextcloud"
+            MYSQL_USER: "nextcloud"
+            MYSQL_PASSWORD: "nextcloud_weiki_JKL_sdf"
+        volumes:
+            - ./lib/mariadb:/var/lib/mysql
+            - ./var/log/mysql:/var/log/mysql
+        ports:
+            - "3306:3306"
+    nextcloud:
+        image: nextcloud
+        container_name: nextcloud_v1
+        depends_on:
+            - mariadb
+        links:
+            - mariadb
+        ports:
+            - 80:80
+        volumes:
+            - ./nextcloud:/var/www/html
+            - ./apps:/var/www/html/custom_apps
+            - ./data:/var/www/html/data
+            - ./config:/var/www/html/config
+
+# 访问页面填写数据
+
+# 用户名和密码自己设置
+#
+# 页面上选择数据库mariadb
+# 页面上填写就是你上面mariadb内容
+# 用户名: nextcloud
+# 数据库: nextcloud
+# 密码:  nextcloud_weiki_JKL_sdf
+# 地址(不是默认的localhost):  mariadb
