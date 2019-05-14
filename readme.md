@@ -1,5 +1,5 @@
 
-## 存放docker-compose文件库, 随意取用
+## 存放docker-compose文件仓库, 随意取用
 
 
 ## 目录
