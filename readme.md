@@ -36,7 +36,7 @@ cp -r ~/docker-compose/wordpress-nginx-mariadb ~/wordpress-nginx-mariadb
 
 ```
 
-3. 进行文件夹中, 使用docker-compose 构建镜
+3. 进行文件夹中, 使用docker-compose 下载镜像, 构建镜像
 
 ```
 
