@@ -8,6 +8,11 @@
 ### <a href="#two">2. 使用示例</a>
 ### <a href="#three">3. docker-compose库存</a>
 
+### 目录结构图解
+
+<img src="images/docker-compose-repositories.png" alt="img" />
+
+
 ### <a id="first">1. 运行条件:</a>
 
 #### 需要docker和docker-compose. 如没安装, 可使用[脚本安装]()
