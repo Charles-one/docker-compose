@@ -24,7 +24,7 @@
 
 ```
 
-git clone https://github.com/Charles-one/docker-compose-repositories.git ~/docker-compose
+git clone https://github.com/Charles-one/docker-compose-repository.git ~/docker-compose-repository
 
 ```
 
@@ -32,7 +32,7 @@ git clone https://github.com/Charles-one/docker-compose-repositories.git ~/docke
 
 ```
 
-cp -r ~/docker-compose/wordpress-nginx-mariadb ~/wordpress-nginx-mariadb
+cp -r ~/docker-compose-repository/wordpress-nginx-mariadb ~/wordpress-nginx-mariadb
 
 ```
 
