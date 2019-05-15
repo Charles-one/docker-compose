@@ -10,7 +10,7 @@
 
 ### 目录结构图解
 
-![img](images/docker-compose-repositories.png)
+![img](photos/docker-compose-reposityory.png)
 
 
 ### <a id="first">1. 运行条件:</a>
