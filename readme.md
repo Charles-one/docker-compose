@@ -57,7 +57,7 @@ docker-compose up -d
 
 设置用户密码即可使用
 
-5. 更多docker-compose用法[请参考这里]().
+5. 更多docker-compose用法[请参考这里](https://charles-one.github.io/xiaoxinLab/linux/docker-compose简单使用/).
 
 
 ### <a id="three" >3. docker-compose库存</a>
