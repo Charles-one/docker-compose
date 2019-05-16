@@ -4,20 +4,20 @@ services:
     image: mariadb:10.2
     container_name: mariadb_v1
     environment:
-      MYSQL_ROOT_PASSWORD: "password_QUI356_ccf"
-      MYSQL_DATABASE: "wordpress"
-      MYSQL_USER: "wordone"
-      MYSQL_PASSWORD: "wordpress_weiki_JKL_sdf1"
+      MYSQL_ROOT_PASSWORD: password_QUI356_ccf
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordone
+      MYSQL_PASSWORD: wordpress_weiki_JKL_sdf1
     volumes:
       - ./lib/mariadb:/var/lib/mysql
       - ./var/log/mysql:/var/log/mysql
     ports:
-      - "3306:3306"
+      - 3306:3306
   nginx:
     image: nginx:1.14.2
     container_name: nginx_v1
     volumes:
-      - ./etc/nginx/conf:/etc/nginx
+      - ./etc/nginx:/etc/nginx
       - ./var/log/nginx:/var/log/nginx
       - ./wordpress:/usr/share/nginx/html
     ports:
