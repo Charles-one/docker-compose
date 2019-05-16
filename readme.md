@@ -67,5 +67,7 @@ docker-compose up -d
 
 <a href="nextcloud">nextcloud个人私有云</a>
 
+<a href="nginx-hugoBlog">nginx-hugoBlog使用hugo生成博客地址,nginx做代理</a>
+
 
 
