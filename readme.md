@@ -13,9 +13,10 @@
 ![img](photos/docker-compose-reposityory.png)
 
 
+
 ### <a id="first">1. 运行条件:</a>
 
-#### 需要docker和docker-compose. 如没安装, 可使用[脚本安装]()
+#### 需要docker和docker-compose. 如没安装, 可使用[脚本安装](https://github.com/Charles-one/shell-repository)库存中安装docker与docker-compose.
 
 
 ### <a id="two">2. 使用示例, 这里以wordpress-nginx-mariadb为例</a>
@@ -40,7 +41,7 @@ cp -r ~/docker-compose-repository/wordpress-nginx-mariadb ~/wordpress-nginx-mari
 
 ```
 
-# 进行需要运行的docker-compose库中
+# 进入需要运行的docker-compose文件中
 cd ~/wordpress-nginx-mariadb
 
 # up 表示构建, -d后台运行
