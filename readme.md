@@ -69,5 +69,7 @@ docker-compose up -d
 
 <a href="nginx-hugoBlog">nginx-hugoBlog使用hugo生成博客地址,nginx做代理</a>
 
+<a href="nginx-https-hugoBlog">nginx-hugoBlog使用hugo生成博客地址,nginx增加配置SSL即HTTPS</a>
+
 
 
